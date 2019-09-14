@@ -1,0 +1,41 @@
+.moaccordion {
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s;
+
+    &:after {
+        content: "\f067";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 13px;
+        float: left;
+    }
+
+    &.active {
+
+        &:after {
+            content: "\f068";
+        }
+    }
+
+}
+
+html[dir="ltr"] .moaccordion {
+    &:after {
+        margin-right: 5px;
+        margin-left: 0;
+        float: right;
+    }
+}
+
+.mopanel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+    margin-bottom: 0;
+}

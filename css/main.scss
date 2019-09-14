@@ -1,0 +1,166 @@
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixins';
+@import 'sass/helpers/extends';
+@import 'sass/helpers/classes';
+
+@import 'sass/base/reset';
+@import 'sass/base/typography';
+
+@import 'sass/components/forms';
+@import 'sass/components/navbar';
+@import 'sass/components/carousel';
+@import 'sass/components/accordion';
+
+@import 'sass/layout/header';
+@import 'sass/pages/home';
+@import 'sass/layout/footer';
+
+.search {
+    margin-right: 41px;
+
+    @media (max-width:991px) {
+        display: none;
+        position: static;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        margin: auto;
+    }
+}
+
+html[dir="ltr"] .search {
+    margin-right: 0;
+    margin-left: 41px;
+
+    @media (max-width:991px) {
+        display: none;
+        position: static;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        margin: auto;
+    }
+}
+
+.search-container {
+    width: 252px;
+    height: 47px;
+    position: relative;
+
+    @media (max-width:991px) {
+        width: 100%;
+    }
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    padding: 0 30px;
+    font-size: 14px;
+    color: #84baea;
+    border: 1px solid #4789c5;
+    background-color: #1e6fb9;
+    @include transition(all 0.3s ease-in-out);
+
+    &::placeholder {
+        font-size: 14px;
+        color: #84baea;
+    }
+
+    &:focus {
+        border-color: $maincolor;
+    }
+}
+
+.searchbtn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 25px;
+    top: 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        color: $maincolor
+    }
+}
+
+html[dir="ltr"] .searchbtn {
+    right: 25px;
+    left: auto;
+}
+
+.search-pop {
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    background-color: #fff;
+    bottom: 10px;
+    left: 0;
+    transform: translateY(100%);
+    z-index: 6;
+    display: none;
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        display: block;
+        border-width: 16px;
+        border-color: transparent transparent #ffffff;
+        border-style: solid;
+        top: -30px;
+        position: absolute;
+        right: 53.5%;
+        transform: translateX(50%);
+
+        @media (max-width:480px) {
+            right: 56.5%;
+        }
+    }
+
+    .search {
+        display: flex;
+    }
+}
+
+html[dir="ltr"] .search-pop {
+    &:before {
+        right: auto;
+        left: 49.5%;
+
+        @media (max-width:480px) {
+            left: 48.5%;
+            right: auto;
+        }
+    }
+
+    .search {
+        display: flex;
+    }
+}
+
+.search-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 5;
+    display: none;
+}
