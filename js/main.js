@@ -1,4 +1,4 @@
-$(document).ready(function () {
+window.onload = function () {
     $(".loader").fadeOut(1000, function () {
         $(this).parent().hide();
         $('html, body').css("overflow", "auto");
@@ -6,6 +6,9 @@ $(document).ready(function () {
             scrollTop: 0
         }, 1);
     });
+}
+$(document).ready(function () {
+
     // Mobile Side Menu 
     $('.menu-btn').click(function () {
         $('.xs-nav').show();
