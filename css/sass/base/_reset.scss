@@ -149,3 +149,7 @@ html {
     -webkit-animation: move 5s linear forwards infinite, fade 5s linear infinite;
     animation: move 5s linear forwards infinite, fade 5s linear infinite;
 }
+
+.flex-fix {
+    display: flex;
+}

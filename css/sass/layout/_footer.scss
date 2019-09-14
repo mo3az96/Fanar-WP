@@ -80,6 +80,13 @@ html[dir="ltr"] .contact {
     }
 }
 
+.contact-header {
+    @media (max-width:767px) {
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+}
+
 .foot-links {
     display: flex;
     align-items: flex-start;
@@ -205,6 +212,7 @@ html[dir="ltr"] .news-btn {
         order: 2;
         margin-top: 10px;
         padding: 10px 0;
+        text-align: center;
     }
 
     .tasawk {
