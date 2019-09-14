@@ -93,121 +93,16 @@ html[dir="ltr"] .logo {
 }
 
 .mo-user-nav {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     margin-right: 39px;
 
     @media (max-width:991px) {
         margin: 0;
-    }
-}
-
-html[dir="ltr"] .mo-user-nav {
-    margin-left: 25px;
-    margin-right: 0;
-
-    @media (max-width:991px) {
-        margin: 0;
-    }
-}
-
-.user-anchor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-
-    &.mo-user {
-        display: none;
-        border: 1px solid transparent;
-        color: $seccolor;
-        background-color: #fff;
-        position: relative;
-        margin: 0 8px;
-        @include transition(all 0.3s ease-in-out);
-
-        &:hover {
-            border: 1px solid #4587c4;
-            color: #fff;
-            background-color: transparent;
-        }
-
-        @media (max-width:991px) {
-            display: flex;
-        }
-    }
-
-    &.menu-btn {
-        display: none;
-        border: 1px solid #4587c4;
-        color: #fff;
-        background-color: transparent;
-        @include transition(all 0.3s ease-in-out);
-
-        &:hover {
-            border: 1px solid transparent;
-            color: $seccolor;
-            background-color: #fff;
-        }
-
-        @media (max-width:991px) {
-            display: flex;
-        }
-    }
-
-    &.search-icon {
-        border: 1px solid #4587c4;
-        color: #fff;
-        background-color: transparent;
-        @include transition(all 0.3s ease-in-out);
-
-        &:hover {
-            border: 1px solid transparent;
-            color: $seccolor;
-            background-color: #fff;
-        }
-    }
-
-    &.mo-cart-icon {
-        border: 1px solid transparent;
-        color: $seccolor;
-        background-color: #fff;
-        position: relative;
-        margin-right: 8px;
-        @include transition(all 0.3s ease-in-out);
-
-        &:hover {
-            border: 1px solid #4587c4;
-            color: #fff;
-            background-color: transparent;
-
-            .items {
-                animation: vibe 0.7s
-            }
-        }
-    }
-
-    .items {
-        font-size: 12px;
-        color: #fff;
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        background-color: $maincolor;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        top: 0;
-        right: 0;
     }
 }
-
-
 
 .user-anchor {
     display: flex;
