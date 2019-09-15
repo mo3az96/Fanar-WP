@@ -334,7 +334,6 @@ html[dir=ltr] .navlink-li:last-child {
   color: #9e9e9e;
   justify-content: center;
   font-size: 15px;
-  color: #d2d2d2;
 }
 .xs-nav .closebtn {
   position: absolute;
@@ -811,11 +810,11 @@ html[dir=ltr] .logo {
   border-radius: 50%;
 }
 .user-anchor.menu-btn {
-  border: 1px solid transparent;
-  color: #105da3;
-  background-color: #fff;
+  border: 1px solid #4587c4;
+  color: #fff;
+  background-color: transparent;
   position: relative;
-  margin-left: 8px;
+  margin-right: 8px;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -847,8 +846,8 @@ html[dir=ltr] .logo {
 }
 
 html[dir=ltr] .user-anchor.menu-btn {
-  margin-right: 8px;
-  margin-left: 0;
+  margin-right: 0;
+  margin-left: 8px;
 }
 
 .close-search {

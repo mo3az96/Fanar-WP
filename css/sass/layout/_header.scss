@@ -127,11 +127,11 @@ html[dir="ltr"] .mo-user-nav {
     border-radius: 50%;
 
     &.menu-btn {
-        border: 1px solid transparent;
-        color: $seccolor;
-        background-color: #fff;
+        border: 1px solid #4587c4;
+        color: #fff;
+        background-color: transparent;
         position: relative;
-        margin-left: 8px;
+        margin-right: 8px;
         @include transition(all 0.3s ease-in-out);
 
         &:hover {
@@ -162,8 +162,8 @@ html[dir="ltr"] .mo-user-nav {
 
 html[dir="ltr"] .user-anchor {
     &.menu-btn {
-        margin-right: 8px;
-        margin-left: 0;
+        margin-right: 0;
+        margin-left: 8px;
     }
 }
 
