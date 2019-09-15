@@ -1208,13 +1208,13 @@ html[dir=ltr] .state.last-state::after {
 }
 
 html[dir=ltr] .services .serv-title {
-  font-size: 14px;
+  font-size: 15px;
   right: auto;
   left: 30px;
 }
 @media (max-width: 767px) {
   html[dir=ltr] .services .serv-title {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
