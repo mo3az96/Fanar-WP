@@ -601,6 +601,7 @@ html[dir=ltr] .xs-nav .main-nav {
   opacity: 0.5;
 }
 .client .client-img:hover img {
+  opacity: 1;
   -webkit-filter: none;
   /* Safari 6.0 - 9.0 */
   filter: none;
