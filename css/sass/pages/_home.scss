@@ -372,3 +372,16 @@ html[dir="ltr"] .state {
         }
     }
 }
+
+html[dir="ltr"] .services {
+
+    .serv-title {
+        font-size: 14px;
+        right: auto;
+        left: 30px;
+
+        @media (max-width:767px) {
+            font-size: 12px;
+        }
+    }
+}

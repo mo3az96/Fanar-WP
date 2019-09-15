@@ -1206,6 +1206,17 @@ html[dir=ltr] .state.last-state::after {
   }
 }
 
+html[dir=ltr] .services .serv-title {
+  font-size: 14px;
+  right: auto;
+  left: 30px;
+}
+@media (max-width: 767px) {
+  html[dir=ltr] .services .serv-title {
+    font-size: 12px;
+  }
+}
+
 .foot {
   background-image: url(../images/foot-pat.png);
   background-repeat: repeat-x;
