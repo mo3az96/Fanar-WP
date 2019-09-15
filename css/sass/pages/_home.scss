@@ -46,7 +46,7 @@
 
         @media (max-width:991px) {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
     }
 
@@ -379,6 +379,8 @@ html[dir="ltr"] .services {
         font-size: 15px;
         right: auto;
         left: 30px;
+        align-items: center;
+        padding: 0 25px;
 
         @media (max-width:767px) {
             font-size: 13px;
