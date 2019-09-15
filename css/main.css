@@ -1138,7 +1138,6 @@ html[dir=ltr] .state.last-state::after {
 }
 .services .serv-title {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 167px;
   height: 167px;
@@ -1147,12 +1146,28 @@ html[dir=ltr] .state.last-state::after {
   font-size: 19px;
   font-family: "Frutiger-bold";
   border-radius: 50%;
-  padding: 0 25px;
+  padding: 54px 25px 0;
   text-align: center;
   position: absolute;
   bottom: -40px;
   right: 30px;
   z-index: 4;
+}
+.services .serv-title.last-title {
+  padding: 54px 32px;
+}
+@media (max-width: 767px) {
+  .services .serv-title.last-title {
+    padding: 45px 32px 0;
+  }
+}
+@media (max-width: 767px) {
+  .services .serv-title {
+    width: 147px;
+    height: 147px;
+    padding: 45px 25px 0;
+    font-size: 16px;
+  }
 }
 .services .serv-title:before {
   content: "";
@@ -1162,6 +1177,15 @@ html[dir=ltr] .state.last-state::after {
   border: 1px solid rgba(132, 186, 234, 0.502);
   border-radius: 50%;
   background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .services .serv-title:before {
+    width: 116px;
+    height: 116px;
+  }
 }
 .services .serv-title:after {
   content: "";
@@ -1171,6 +1195,15 @@ html[dir=ltr] .state.last-state::after {
   border: 1px solid rgba(132, 186, 234, 0.302);
   border-radius: 50%;
   background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .services .serv-title:after {
+    width: 130px;
+    height: 130px;
+  }
 }
 
 .foot {
